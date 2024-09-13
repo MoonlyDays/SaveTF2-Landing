@@ -25,9 +25,9 @@ export function MainLayout({
 
                     <section className="flex h-fit w-full flex-col items-center pt-[16rem] text-center">
                         <div
-                            className="z-0 flex h-[150px] w-[450px] items-center justify-center border-red-500 bg-sign bg-cover bg-top text-amber-500 sm:h-[375px] sm:w-[700px]">
+                            className="z-0 flex h-[250px] w-[450px] items-center justify-center border-red-500 bg-sign bg-cover bg-top text-amber-500 sm:h-[375px] sm:w-[700px]">
                             <Odometer
-                                className="text-shadow-counter mt-[30px] font-build text-[70px] sm:mt-[20px] sm:text-[110px]"
+                                className="text-shadow-counter mt-[10px] font-build text-[70px] sm:mt-[20px] sm:text-[110px]"
                                 value={signatures}
                             />
                         </div>
