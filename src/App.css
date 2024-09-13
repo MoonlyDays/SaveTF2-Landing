@@ -80,7 +80,7 @@ p {
 .bg_02 {
     background-image: url(./assets/images/bg_02.webp);
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 .bg_03 {

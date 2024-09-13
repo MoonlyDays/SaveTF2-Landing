@@ -2,9 +2,9 @@ import { PropsWithChildren } from "react";
 import NavMenu from "../Components/UI/NavMenu";
 import { Odometer } from "../Components/Odometer";
 import { AccessibilityMenu } from "../Components/UI/SiteWidget";
-import { PetitionClosed } from "../Components/UI/PetitionClosed";
 
 import SaveTF2 from "../assets/images/savetf2_fixtf2.webp";
+import { SignaturesDelivered } from "../Components/Sections/SignaturesDelivered.tsx";
 
 export function MainLayout({
     children,
@@ -16,7 +16,7 @@ export function MainLayout({
         <div className="overflow-hidden">
             <AccessibilityMenu />
             <div className="bg_01 h-fit w-full">
-                <div className="flex flex-col items-center justify-center pb-10">
+                <div className="flex flex-col items-center justify-center -mb-20">
                     <img
                         src={SaveTF2}
                         alt="#SaveTF2"
@@ -24,16 +24,19 @@ export function MainLayout({
                     />
 
                     <section className="flex h-fit w-full flex-col items-center pt-[16rem] text-center">
-                        <div className="z-0 flex h-[250px] w-[450px] items-center justify-center border-red-500 bg-sign bg-cover bg-top text-amber-500 sm:h-[375px] sm:w-[700px]">
+                        <div
+                            className="z-0 flex h-[150px] w-[450px] items-center justify-center border-red-500 bg-sign bg-cover bg-top text-amber-500 sm:h-[375px] sm:w-[700px]">
                             <Odometer
                                 className="text-shadow-counter mt-[30px] font-build text-[70px] sm:mt-[20px] sm:text-[110px]"
                                 value={signatures}
                             />
                         </div>
-                        <PetitionClosed />
                     </section>
                 </div>
             </div>
+            <section className="bg_02 flex h-fit flex-col items-center py-16">
+                <SignaturesDelivered />
+            </section>
             <NavMenu />
             <div>
                 <div className="bg-[100%_auto]">{children}</div>
