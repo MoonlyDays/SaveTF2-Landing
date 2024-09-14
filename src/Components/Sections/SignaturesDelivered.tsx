@@ -7,7 +7,7 @@ export function SignaturesDelivered() {
             <div className="flex w-full max-w-[840px] flex-col gap-3 px-6 sm:flex-row-reverse">
                 <div className="flex h-fit w-full flex-col gap-4">
                     <div className="text-center text-amber-500">
-                        <div className="text-lg">Update as of August 13th</div>
+                        <div className="text-lg">Update as of September 13th</div>
                         <div className="font-build text-3xl text-amber-500">
                             The Signatures have been delivered
                         </div>
